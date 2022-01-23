@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Soft_Cyan: hsl(174, 77%, 80%);
+  --Strong_Cyan: hsl(174, 81%, 36%);
+  --Light_Grayish_Red: hsl(14, 92%, 95%);
+  --Light_Red: hsl(15, 100%, 70%);
+  --Pale_Blue: hsl(226, 100%, 87%);
+  --White: hsl (0, 0%, 100%);
+  --Very_Pale_Blue: hsl(230, 100%, 99%);
+  --Light_Grayish_Blue: hsl(224, 65%, 95%);
+  --Light_Grayish_Blue: hsl(223, 50%, 87%);
+  --Grayish_Blue: hsl(225, 20%, 60%);
+  --Dark_Desaturated_Blue: hsl(227, 35%, 25%);
+  font-size: 15px;
+  font-family: 'Manrope', 'Open Sans', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/bg-pattern.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--Very_Pale_Blue);
+  min-height: 100vh;
+  /*overflow: hidden;*/
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 500px;
+}
+
+.container .header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 60px 50px 70px 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-image: url("../images/pattern-circles.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25%;
+}
+
+.container .header__wrapper h1 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.container .header__wrapper p {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--Grayish_Blue);
+}
+
+.container .pricing__component__wrapper {
+  background-color: white;
+  padding: 50px 40px 25px;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-shadow: 0px 7px 25px 5px rgba(51, 51, 51, 0.15);
+  box-shadow: 0px 7px 25px 5px rgba(51, 51, 51, 0.15);
+}
+
+.container .pricing__component__wrapper .pg_views, .container .pricing__component__wrapper .month_amount {
+  /*width: 50%;*/
+  /*text-align: center;*/
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--Grayish_Blue);
+}
+
+.container .pricing__component__wrapper .pg_views .view_content, .container .pricing__component__wrapper .month_amount .view_content {
+  text-transform: uppercase;
+}
+
+.container .pricing__component__wrapper .month_amount_wrapper {
+  color: var(--Grayish_Blue);
+  vertical-align: center;
+}
+
+.container .pricing__component__wrapper .month_amount_wrapper span:nth-child(1) {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.container .pricing__component__wrapper .month_amount_wrapper span:nth-child(2) {
+  font-size: 14px;
+  position: relative;
+  top: -12px;
+}
+
+.container .pricing__component__wrapper .slide__bar__wrapper {
+  width: 100%;
+  margin: 30px 0 45px 0;
+}
+
+.container .pricing__component__wrapper .slide__bar__wrapper .slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 50px;
+  background-color: var(--Light_Grayish_Blue);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.container .pricing__component__wrapper .slide__bar__wrapper .slider:hover {
+  opacity: 1;
+}
+
+.container .pricing__component__wrapper .slide__bar__wrapper .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #12a899;
+  background-image: url("../images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65%;
+  -webkit-box-shadow: 0px 13px 33px 5px rgba(18, 168, 153, 0.77);
+  box-shadow: 0px 13px 33px 5px rgba(18, 168, 153, 0.77);
+}
+
+.container .pricing__component__wrapper .billing__wrapper {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.container .pricing__component__wrapper .billing__wrapper .billing__selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  line-height: 2.0;
+}
+
+.container .pricing__component__wrapper .billing__wrapper .billing__selection span {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--Grayish_Blue);
+}
+
+.container .pricing__component__wrapper .billing__wrapper .billing__selection .checkbox {
+  display: none;
+  opacity: 0;
+  position: absolute;
+}
+
+.container .pricing__component__wrapper .billing__wrapper .billing__selection .label {
+  position: relative;
+  background-color: var(--Light_Grayish_Blue);
+  border-radius: 50px;
+  height: 25px;
+  width: 55px;
+  padding: 4px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.container .pricing__component__wrapper .billing__wrapper .billing__selection .label .slider {
+  position: relative;
+  top: -1.5px;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  -webkit-transition: -webkit-transform 0.6s linear;
+  transition: -webkit-transform 0.6s linear;
+  transition: transform 0.6s linear;
+  transition: transform 0.6s linear, -webkit-transform 0.6s linear;
+}
+
+.container .pricing__component__wrapper .billing__wrapper .billing__selection .label .checkbox:checked + .label .slider {
+  -webkit-transform: translateX(28px);
+          transform: translateX(28px);
+}
+
+.container .pricing__component__wrapper .billing__wrapper .billing__selection .discount__amount {
+  font-size: 10px;
+  font-weight: 700;
+  background-color: var(--Light_Grayish_Red);
+  color: var(--Light_Red);
+  margin-right: 20px;
+  height: 20px;
+  /*line-height: 2.9;*/
+  margin-left: 15px;
+  padding: 0 5px;
+  border-radius: 50px;
+}
+
+.container .cta__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 40px;
+  color: var(--Grayish_Blue);
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  margin-top: 1.5px;
+  -webkit-box-shadow: 0px 7px 25px 5px rgba(51, 51, 51, 0.15);
+  box-shadow: 0px 7px 25px 5px rgba(51, 51, 51, 0.15);
+}
+
+.container .cta__wrapper .features {
+  list-style: none;
+}
+
+.container .cta__wrapper .features li {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.container .cta__wrapper .features li .chk_mark {
+  margin-right: 10px;
+}
+
+.container .cta__wrapper .trial_btn {
+  text-decoration: none;
+  color: var(--Grayish_Blue);
+  font-size: 12px;
+  font-weight: 700;
+  background-color: var(--Dark_Desaturated_Blue);
+  padding: 10px 30px;
+  border-radius: 50px;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.container .cta__wrapper .trial_btn:hover {
+  color: white;
+}
+
+.attribution {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
