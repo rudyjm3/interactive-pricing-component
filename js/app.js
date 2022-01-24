@@ -3,7 +3,7 @@ const slider = document.getElementById("moneySlider")
 const min = slider.min
 const max = slider.max
 const value = slider.value
-//E9EEFB
+
 slider.style.background = `linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) ${(value-min)/(max-min)*100}%, #E9EEFB ${(value-min)/(max-min)*100}%, #E9EEFB 100%)`
 
 slider.oninput = function() {
@@ -25,3 +25,20 @@ toggle.addEventListener('change', e => {
       document.getElementsByClassName('discount__amount')[0].style.cssText ="background-color: transparent";
    }
 })
+
+// PRICE CALC
+
+
+
+
+
+
+// Here are the different page view ranges and the corresponding monthly price totals:
+
+// - 10K pageviews / $8 per month  (slider step = 20)
+// - 50K pageviews / $12 per month (slider step = 40)
+// - 100K pageviews / $16 per month (slider step = 60)
+// - 500k pageviews / $24 per month (slider step = 80)
+// - 1M pageviews / $36 per month (slider step = 100)
+
+// If the visitor switches the toggle to yearly billing, a 25% discount should be applied to all prices.
