@@ -4,7 +4,13 @@
 #####################################################
 *.sketch
 *.fig
+# Avoid tracking certain folders
+#####################################################
+## Design Files and Site urls that helped complete project 🙂 ##
+#####################################################
 design/
+refsites/
+
 # Avoid accidental XD upload if you convert the design file
 ###############################################
 ## Please do not remove line 12 - thanks! 🙂 ##
