@@ -43,6 +43,13 @@ body {
          color: var(--Grayish_Blue);
       }
    }
+   .mainwrapper{
+      -webkit-box-shadow: 0px 7px 25px 5px rgba(51,51,51,0.15); 
+      box-shadow: 0px 7px 25px 5px rgba(51,51,51,0.15);
+      background-color: transparent;
+      border-radius: 10px;
+      
+   }
    .pricing__component__wrapper{
       background-color: white;
       padding: 50px 40px 25px;
@@ -52,8 +59,8 @@ body {
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      -webkit-box-shadow: 0px 7px 25px 5px rgba(51,51,51,0.15); 
-      box-shadow: 0px 7px 25px 5px rgba(51,51,51,0.15);
+      /*-webkit-box-shadow: 0px 7px 25px 5px rgba(51,51,51,0.15); 
+      box-shadow: 0px 7px 25px 5px rgba(51,51,51,0.15);*/
       .pg_views, .month_amount{
          /*width: 50%;*/
          /*text-align: center;*/
@@ -136,7 +143,7 @@ body {
             width: 100%;
             line-height: 2.0;
              span{
-                font-size: 13px;
+               font-size: 13px;
                font-weight: 700;
                color: var(--Grayish_Blue);
             }
@@ -197,7 +204,7 @@ body {
             .discount__amount{
                font-size: 10px;
                font-weight: 700;
-               background-color: var(--Light_Grayish_Red);
+               /*background-color: var(--Light_Grayish_Red);*/
                color: var(--Light_Red);
                margin-right: 20px;
                height: 20px;
@@ -218,9 +225,9 @@ body {
       color: var(--Grayish_Blue);
       background-color: white;
       border-radius: 0 0 5px 5px;
-      margin-top: 1.5px;
-      -webkit-box-shadow: 0px 7px 25px 5px rgba(51,51,51,0.15); 
-      box-shadow: 0px 7px 25px 5px rgba(51,51,51,0.15);
+      margin-top: 2px;
+      /*-webkit-box-shadow: 0px 7px 25px 5px rgba(51,51,51,0.15); 
+      box-shadow: 0px 7px 25px 5px rgba(51,51,51,0.15);*/
 
       .features{
          list-style: none;

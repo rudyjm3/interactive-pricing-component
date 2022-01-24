@@ -90,6 +90,13 @@ body {
   color: var(--Grayish_Blue);
 }
 
+.container .mainwrapper {
+  -webkit-box-shadow: 0px 7px 25px 5px rgba(51, 51, 51, 0.15);
+  box-shadow: 0px 7px 25px 5px rgba(51, 51, 51, 0.15);
+  background-color: transparent;
+  border-radius: 10px;
+}
+
 .container .pricing__component__wrapper {
   background-color: white;
   padding: 50px 40px 25px;
@@ -106,8 +113,8 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-shadow: 0px 7px 25px 5px rgba(51, 51, 51, 0.15);
-  box-shadow: 0px 7px 25px 5px rgba(51, 51, 51, 0.15);
+  /*-webkit-box-shadow: 0px 7px 25px 5px rgba(51,51,51,0.15); 
+      box-shadow: 0px 7px 25px 5px rgba(51,51,51,0.15);*/
 }
 
 .container .pricing__component__wrapper .pg_views, .container .pricing__component__wrapper .month_amount {
@@ -279,7 +286,7 @@ body {
 .container .pricing__component__wrapper .billing__wrapper .billing__selection .discount__amount {
   font-size: 10px;
   font-weight: 700;
-  background-color: var(--Light_Grayish_Red);
+  /*background-color: var(--Light_Grayish_Red);*/
   color: var(--Light_Red);
   margin-right: 20px;
   height: 20px;
@@ -304,9 +311,9 @@ body {
   color: var(--Grayish_Blue);
   background-color: white;
   border-radius: 0 0 5px 5px;
-  margin-top: 1.5px;
-  -webkit-box-shadow: 0px 7px 25px 5px rgba(51, 51, 51, 0.15);
-  box-shadow: 0px 7px 25px 5px rgba(51, 51, 51, 0.15);
+  margin-top: 2px;
+  /*-webkit-box-shadow: 0px 7px 25px 5px rgba(51,51,51,0.15); 
+      box-shadow: 0px 7px 25px 5px rgba(51,51,51,0.15);*/
 }
 
 .container .cta__wrapper .features {
