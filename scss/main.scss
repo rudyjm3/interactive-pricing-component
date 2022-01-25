@@ -125,8 +125,11 @@ body {
             background-repeat: no-repeat;
             background-position: center;
             background-size: 65%;
-            -webkit-box-shadow: 0px 13px 33px 5px rgba(18,168,153,0.77); 
-            box-shadow: 0px 13px 33px 5px rgba(18,168,153,0.77);
+            /*-webkit-box-shadow: 0px 13px 33px 5px rgba(18,168,153,0.77); 
+            box-shadow: 0px 13px 33px 5px rgba(18,168,153,0.77);*/
+            box-shadow: 0px 15px 30px 5px rgba(18,168,153,0.5);
+-webkit-box-shadow: 0px 15px 30px 5px rgba(18,168,153,0.5);
+-moz-box-shadow: 0px 15px 30px 5px rgba(18,168,153,0.5);
             transition: background-color 0.3s ease-in-out;
             &:hover{
                background-color: #3ce7d6; 
