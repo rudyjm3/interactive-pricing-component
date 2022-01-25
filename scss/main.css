@@ -132,7 +132,7 @@ body {
 
 .container .pricing__component__wrapper .month_amount_wrapper {
   color: var(--Grayish_Blue);
-  vertical-align: center;
+  /*vertical-align: center;*/
 }
 
 .container .pricing__component__wrapper .month_amount_wrapper span:nth-child(1) {
@@ -144,6 +144,7 @@ body {
 
 .container .pricing__component__wrapper .month_amount_wrapper span:nth-child(2) {
   font-size: 14px;
+  font-weight: 700;
   position: relative;
   top: -12px;
 }

@@ -13,6 +13,7 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  
 </head>
 
 <body>
@@ -33,7 +34,7 @@
             </div>
             <!-- SLIDE BAR -->   
             <div class="slide__bar__wrapper">
-               <input type="range" name="" class="slider" id="moneySlider" min="0" max="100" step="20" value="50">
+               <input type="range" name="" class="slider" id="moneySlider" min="0" max="100" step="20" value="60" onchange="moneySliderUpdate(this)">
             </div>
 
             <div class="billing__wrapper">

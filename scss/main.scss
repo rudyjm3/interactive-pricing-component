@@ -75,7 +75,7 @@ body {
       
       .month_amount_wrapper{
          color: var(--Grayish_Blue);
-         vertical-align: center;
+         /*vertical-align: center;*/
          span:nth-child(1){
             font-size: 45px;
             font-weight: 700;
@@ -84,6 +84,7 @@ body {
          }
          span:nth-child(2){
             font-size: 14px;
+            font-weight: 700;
             position: relative;
             top: -12px;
          }
