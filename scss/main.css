@@ -32,6 +32,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-image: url("../images/bg-pattern.svg");
   background-position: top;
   background-repeat: no-repeat;
@@ -39,6 +43,7 @@ body {
   background-color: var(--Very_Pale_Blue);
   min-height: 100vh;
   margin-bottom: 100px;
+  margin: 0 auto;
   /*overflow: hidden;*/
 }
 
@@ -55,6 +60,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 550px;
+  margin-bottom: 100px;
 }
 
 .container .header__wrapper {
@@ -359,7 +365,9 @@ body {
 
 footer {
   background-color: #333;
-  padding: 25px 0;
+  padding: 5px 0;
+  width: 100%;
+  line-height: 1.5;
 }
 
 footer .attribution {
@@ -374,11 +382,25 @@ footer .attribution {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  color: #24B2DB;
+  font-weight: 600;
+}
+
+footer .attribution span {
+  margin: 0 4px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer .attribution img {
+  width: 24px;
+  margin-right: -4px;
 }
 
 footer .attribution a {
   text-decoration: none;
   color: #e6e6e6;
+  margin: 0 4px;
 }
 
 .attribution {

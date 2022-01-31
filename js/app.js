@@ -11,7 +11,7 @@ slider.oninput = function() {
 };
 
 
-// SLIDER AND PRIVCE CALCULATION /////////////////////////////////////////////////////////
+// SLIDER AND PRICE CALCULATION /////////////////////////////////////////////////////////
 let viewers = document.getElementsByClassName('views_number')[0];
 let cost = document.getElementsByClassName('m_amount')[0];
 
@@ -35,7 +35,7 @@ function moneySliderUpdate(ele) {
          view = "50K";
          cost = "12.00"; 
          discount = (25 / 100) * cost;
-         discount_amount = (cost - discount).toFixed(2);          
+         discount_amount = (cost - discount).toFixed(2);         
          break;
       case 60:
          view = "100K";
@@ -61,6 +61,7 @@ function moneySliderUpdate(ele) {
    console.log(view);
    document.getElementsByClassName('m_amount')[0].innerText = cost;
    console.log(cost);
+   
 
 
    let toggle = document.getElementById('chk');
