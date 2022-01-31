@@ -11,7 +11,7 @@ slider.oninput = function() {
 };
 
 
-// SLIDER  /////////////////////////////////////////////////////////
+// SLIDER AND PRIVCE CALCULATION /////////////////////////////////////////////////////////
 let viewers = document.getElementsByClassName('views_number')[0];
 let cost = document.getElementsByClassName('m_amount')[0];
 
@@ -23,36 +23,37 @@ function moneySliderUpdate(ele) {
    switch(value) {
       case 0:
          view = "0";
-         cost = "0.00"; 
+         cost = "0.00";
+         break; 
       case 20:
          view = "10K";
          cost = "8.00";
          discount = (25 / 100) * cost;
-         discount_amount = cost - discount; 
+         discount_amount = (cost - discount).toFixed(2); 
          break;
       case 40:
          view = "50K";
          cost = "12.00"; 
          discount = (25 / 100) * cost;
-         discount_amount = cost - discount;          
+         discount_amount = (cost - discount).toFixed(2);          
          break;
       case 60:
          view = "100K";
          cost = "16.00";
          discount = (25 / 100) * cost;
-         discount_amount = cost - discount; 
+         discount_amount = (cost - discount).toFixed(2); 
          break;
       case 80:
          view = "500K";
          cost = "24.00";
          discount = (25 / 100) * cost;
-         discount_amount = cost - discount; 
+         discount_amount = (cost - discount).toFixed(2); 
          break;
       case 100:
          view = "1M";
          cost = "36.00";
          discount = (25 / 100) * cost;
-         discount_amount = cost - discount;
+         discount_amount = (cost - discount).toFixed(2);
          break;  
    }
 
@@ -120,4 +121,3 @@ function moneySliderUpdate(ele) {
 
 // If the visitor switches the toggle to yearly billing, a 25% discount should be applied to all prices.
 
-// DISCOUNT
