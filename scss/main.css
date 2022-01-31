@@ -38,6 +38,7 @@ body {
   background-size: contain;
   background-color: var(--Very_Pale_Blue);
   min-height: 100vh;
+  margin-bottom: 100px;
   /*overflow: hidden;*/
 }
 
@@ -133,9 +134,15 @@ body {
 .container .pricing__component__wrapper .month_amount_wrapper {
   color: var(--Grayish_Blue);
   /*vertical-align: center;*/
+  /*span:nth-child(1){
+            font-size: 45px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #333;
+         }*/
 }
 
-.container .pricing__component__wrapper .month_amount_wrapper span:nth-child(1) {
+.container .pricing__component__wrapper .month_amount_wrapper .dollarAmount {
   font-size: 45px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -348,6 +355,30 @@ body {
 
 .container .cta__wrapper .trial_btn:hover {
   color: white;
+}
+
+footer {
+  background-color: #333;
+  padding: 25px 0;
+}
+
+footer .attribution {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .attribution a {
+  text-decoration: none;
+  color: #e6e6e6;
 }
 
 .attribution {

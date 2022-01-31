@@ -10,6 +10,7 @@ body {
    background-size: contain;
    background-color: var(--Very_Pale_Blue);
    min-height: 100vh;
+   margin-bottom: 100px;
    /*overflow: hidden;*/
 }
 
@@ -76,12 +77,18 @@ body {
       .month_amount_wrapper{
          color: var(--Grayish_Blue);
          /*vertical-align: center;*/
-         span:nth-child(1){
+         .dollarAmount{
             font-size: 45px;
             font-weight: 700;
             letter-spacing: 1px;
             color: #333;
          }
+         /*span:nth-child(1){
+            font-size: 45px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #333;
+         }*/
          span:nth-child(2){
             font-size: 14px;
             font-weight: 700;
@@ -258,6 +265,22 @@ body {
          }
       }
    }
+}
+
+footer{
+   background-color: #333;
+   padding: 25px 0;
+   .attribution{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      a{
+      text-decoration: none;
+      color: #e6e6e6;
+   }
+   }
+   
 }
 
 
