@@ -36,14 +36,14 @@
                <p class="view_content"><span class="views_number">100K</span> Pageviews</p>
             </div>
             <div class="month_amount_wrapper">
-               <p class="dollarAmount">$<span class="m_amount"> 16.00</span><span> / month</span></p> 
+               <p class="dollarAmount">$<span class="m_amount">16.00</span><span> / month</span></p> 
             </div>
             <!-- SLIDE BAR -->   
             <div class="slide__bar__wrapper">
                <input type="range" name="" class="slider" id="moneySlider" min="0" max="100" step="20" value="60" onchange="moneySliderUpdate(this)">
             </div>
 
-            <div class="billing__wrapper">
+            <!-- orignal <div class="billing__wrapper">
                <div class="billing__selection">
                   <span class="mth">Monthly Billing</span>
                   <label for="chk" class="switch">
@@ -52,6 +52,20 @@
                   </label>
                   <span class="yr">Yearly Billing</span>
                   <p class="discount__amount">25% discount</p>
+               </div>
+            </div> -->
+            <div class="billing__wrapper">
+               <div class="billing__selection">
+                  <div class="mth">Monthly Billing</div>
+                  
+                  <label for="chk" class="switch">
+                     <input type="checkbox" name="chk" class="checkbox" id="chk">
+                     <div class="toggle slider"></div>
+                  </label>
+                  
+                  <div class="yr">Yearly Billing</div>
+                  <div class="discount__amount_lg">25% discount</div>
+                  <div class="discount__amount_sm">-25%</div>
                </div>
             </div>
          </div>

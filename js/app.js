@@ -70,7 +70,7 @@ function moneySliderUpdate(ele) {
       if(e.target.checked) {
          document.getElementsByClassName('yr')[0].style.cssText = "color:var(--Strong_Cyan); transition: color 0.5s ease-in-out";
          document.getElementsByClassName('mth')[0].style.cssText = "color:var(--Grayish_Blue)";
-         document.getElementsByClassName('discount__amount')[0].style.cssText ="background-color: rgba(254, 236, 231, 1.0); transition: all 0.5s ease-in-out";
+         document.getElementsByClassName('discount__amount_lg')[0].style.cssText ="background-color: rgba(254, 236, 231, 1.0); transition: all 0.5s ease-in-out";
 
          document.getElementsByClassName('m_amount')[0].innerText = discount_amount;
 
@@ -79,7 +79,7 @@ function moneySliderUpdate(ele) {
       } else {
          document.getElementsByClassName('mth')[0].style.cssText = "color:var(--Strong_Cyan); transition: color 0.5s ease-in-out";
          document.getElementsByClassName('yr')[0].style.cssText = "color:var(--Grayish_Blue)";
-         document.getElementsByClassName('discount__amount')[0].style.cssText ="background-color: transparent";
+         document.getElementsByClassName('discount__amount_lg')[0].style.cssText ="background-color: transparent";
 
          document.getElementsByClassName('m_amount')[0].innerText = cost;
       }
